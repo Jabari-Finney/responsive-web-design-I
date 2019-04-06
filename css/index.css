@@ -188,8 +188,7 @@ footer {
 @media (max-width:800px){
    
     .container {
-        width:100%;
-        background-color: red;
+        width: 100%;
     }
 
     header {
@@ -211,10 +210,92 @@ footer {
    .cta img{
        display: none;
    }
+   
+   .top-content{
+       display: flex;
+   }
+
+   .middle-img{
+       width: 100%;
+       padding: 10px 10px 10px 10px;
+   }
+
+   .bottom-content{
+       display: flex;
+   }
 }
 
+/*Mobile CSS*/
+
 @media(max-width: 500px) {
-    .cta {
-      background: gray;
+    
+    .cta .cta-text{
+        margin-top: 40px;
     }
+
+    .top-content{
+        display: block;
+
+    }
+    
+    .main-content .top-content .text-content{        
+        margin-top: 40px;
+        width: auto;
+    }
+
+    .bottom-content{
+        display: block;
+
+    }
+
+    .main-content .bottom-content{
+        margin-top: 0px;
+    }
+
+    .bottom-content .text-content{
+        margin-top: 40px;
+    }
+
+    .main-content .bottom-content .text-content{
+        width:auto;
+    }
+
+
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a{
+        margin: 0 auto;
+        padding: 10px;
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+        border-top: solid grey 1px;
+
+    }
+    
+    header nav a:first-child{
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+        border-top: solid grey 1px;
+
+
+    }
+
+    header nav a:last-child{
+        margin: 0 auto;
+        border-bottom: solid grey 1px;
+
+    }
+
 }
